@@ -6,12 +6,12 @@ An AI-powered GitHub repository recommender that uses semantic search to find th
 
 - Semantic search using Sentence Transformers (all-MiniLM-L6-v2)
 - GitHub API integration for repository search
-- FastAPI backend for quick and efficient API responses
+- Streamlit interface for easy interaction
 - Relevance scoring based on topic similarity
 
 ## Requirements
 
-- Python 3.8+
+- Python 3.9+
 - pip (Python package manager)
 
 ## Installation
@@ -29,42 +29,26 @@ pip install -r requirements.txt
 
 ## Usage
 
-1. Start the server:
+Run the Streamlit app:
 ```bash
-python main.py
+streamlit run main.py
 ```
 
-2. The API will be available at `http://localhost:8000`
+The app will open in your default web browser at `http://localhost:8501`
 
-3. Access the API documentation at `http://localhost:8000/docs`
+## Deployment
 
-4. Make a GET request to `/search/{topic}` to find relevant repositories:
-```
-http://localhost:8000/search/machine-learning
-```
+This app can be deployed for free using [Streamlit Community Cloud](https://streamlit.io/cloud):
 
-Optional query parameter:
-- `limit`: Number of repositories to return (default: 10)
-
-## API Response Example
-
-```json
-{
-  "repositories": [
-    {
-      "name": "username/repo",
-      "description": "Repository description",
-      "stars": 1000,
-      "url": "https://github.com/username/repo",
-      "relevance_score": 0.85
-    }
-  ]
-}
-```
+1. Push your code to GitHub
+2. Sign up for [Streamlit Community Cloud](https://streamlit.io/cloud)
+3. Create a new app and connect it to your GitHub repository
+4. Select main.py as your entry point
+5. Click "Deploy"
 
 ## Technology Stack
 
-- FastAPI - Web framework
+- Streamlit - Web interface
 - Sentence Transformers - Semantic search
 - PyGithub - GitHub API integration
 - Python-dotenv - Environment configuration
