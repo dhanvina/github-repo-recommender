@@ -4,3 +4,6 @@ gcc
 cmake
 git
 pkg-config
+curl
+rustc
+cargo
