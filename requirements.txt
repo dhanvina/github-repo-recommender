@@ -1,5 +1,5 @@
+streamlit
 sentence-transformers
 PyGithub
-fastapi
 uvicorn
 python-dotenv
