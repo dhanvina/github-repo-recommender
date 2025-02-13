@@ -1,0 +1,14 @@
+[deploy]
+# Use the deployment-specific requirements file
+requirements_file = "requirements-deploy.txt"
+
+[server]
+# Increase timeout for package installation
+installTimeout = 900  # 15 minutes
+
+[browser]
+# Automatically open the browser window
+gatherUsageStats = false
+
+[logger]
+level = "info"
