@@ -1,0 +1,25 @@
+name: github-repo-recommender
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - pytorch::pytorch-cpu
+  - pytorch::torchvision-cpu
+  - pip:
+    - streamlit==1.32.0
+    - sentence-transformers==2.2.2
+    - PyGithub==2.1.1
+    - python-dotenv==1.0.0
+    - pydantic==2.5.2
+    - loguru==0.7.2
+    - transformers==4.30.2
+    - numpy>=1.21.0
+    - scikit-learn>=1.0.2
+    - huggingface-hub==0.13.2
+    - tokenizers==0.13.3
+    - tqdm>=4.65.0
+    - typing-extensions>=4.5.0
+    - filelock>=3.12.0
